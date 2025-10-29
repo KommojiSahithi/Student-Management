@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <div class="container">
+
+        <!-- Form -->
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="roll" placeholder="Enter Roll Number" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search by Name or Roll">
+
+        <!-- Sort Buttons -->
+        <div class="sort-buttons">
+            <button id="sortName">Sort by Name</button>
+            <button id="sortRoll">Sort by Roll Number</button>
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
